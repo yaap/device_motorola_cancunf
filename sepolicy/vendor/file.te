@@ -9,3 +9,4 @@ type vendor_sysfs_input, sysfs_type, fs_type;
 type vendor_proc_hw, proc_type, fs_type;
 type vendor_sysfs_touchpanel, fs_type, sysfs_type;
 type vendor_motobox_exec, exec_type, vendor_file_type, file_type;
+type vendor_sysfs_mmc_device_type, fs_type, sysfs_type;

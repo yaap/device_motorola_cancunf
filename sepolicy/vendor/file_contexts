@@ -37,6 +37,9 @@
 # Lights
 /vendor/bin/hw/android\.hardware\.lights-service\.cancunf                              u:object_r:hal_light_default_exec:s0
 
+# mmc device type
+/sys/devices/platform/soc/11240000.mmc/mmc_host/mmc0/mmc0:[a-f0-9]+/type               u:object_r:vendor_sysfs_mmc_device_type:s0
+
 # Mobicore TEE
 /mnt/vendor/tzapp(/.*)?                                                                u:object_r:mnt_vendor_trustlet_file:s0
 
