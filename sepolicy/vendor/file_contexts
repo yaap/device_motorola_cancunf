@@ -46,6 +46,9 @@
 # Motobox
 /vendor/bin/motobox                                                                    u:object_r:vendor_motobox_exec:s0
 
+# MultiHal
+/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.cancunf-multihal                                                   u:object_r:hal_sensors_default_exec:s0
+
 # NFC
 /dev/nq-nfc                                                                            u:object_r:nfc_device:s0
 /dev/nq-nci                                                                            u:object_r:nfc_device:s0
