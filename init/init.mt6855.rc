@@ -718,6 +718,10 @@ on boot
     chown system system /sys/devices/virtual/touchscreen/primary/double_tap_pressed
     chmod 0660 /sys/devices/virtual/touchscreen/primary/double_tap_pressed
 
+    # Single Tap Sensor
+    chown system system /sys/devices/virtual/touchscreen/primary/single_tap_pressed
+    chmod 0660 /sys/devices/virtual/touchscreen/primary/single_tap_pressed
+
 # Smartbook Handler Framework
     chown system system /sys/power/sb_state
     chmod 0660 /sys/power/sb_state
