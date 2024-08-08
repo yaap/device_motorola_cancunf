@@ -7,6 +7,7 @@
 cc_library_shared {
     name: "sensors.cancunf",
     defaults: ["hidl_defaults"],
+    init_rc: ["sensors.cancunf.rc"],
     srcs: [
         "Sensor.cpp",
         "SensorsSubHal.cpp",
