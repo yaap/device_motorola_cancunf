@@ -1,0 +1,22 @@
+[
+  {
+    "repository"  : "vendor_motorola_cancunf",
+    "target_path" : "vendor/motorola/cancunf",
+    "branch": "fifteen"
+  },
+  {
+    "repository"  : "hardware_mediatek",
+    "target_path" : "hardware/mediatek",
+    "branch": "fifteen"
+  },
+  {
+    "repository"  : "device_motorola_cancunf-kernel",
+    "target_path" : "device/motorola/cancunf-kernel",
+    "branch": "fifteen"
+  },
+  {
+    "repository": "vendor_motorola_cancunf-motcamera",
+    "target_path": "vendor/motorola/cancunf-motcamera",
+    "branch": "fifteen"
+  }
+]
