@@ -254,7 +254,6 @@ PRODUCT_PACKAGES += \
     NfcResOverlayCancunf \
     OpenDeltaOverlayCancunf \
     PowerOffAlarmOverlayCancunf \
-    SettingsLibOverlayCancunf \
     SettingsOverlayCancunf \
     SettingsProviderOverlayCancunf \
     SettingsProviderOverlayCancunpXT2431-1 \
