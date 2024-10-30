@@ -203,6 +203,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.log.tag.RtcImsConference=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.RtcImsConfigController=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.thermal_src=$(VENDOR_LOG_LEVEL) \
+	persist.log.tag.TRS=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.FrameTracker=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.libPowerHal=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.mtkpower@impl=$(VENDOR_LOG_LEVEL) \
