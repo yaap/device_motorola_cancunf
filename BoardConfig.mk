@@ -133,6 +133,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Platform
 BOARD_HAS_MTK_HARDWARE := true
+BOARD_HAVE_MTK_FM := true
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
