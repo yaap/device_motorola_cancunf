@@ -529,4 +529,7 @@
 
     <!-- Whether or not wcg mode should be enabled on this device -->
     <bool name="config_enableWcgMode">true</bool>
+
+     <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
 </resources>
