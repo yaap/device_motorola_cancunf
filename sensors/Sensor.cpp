@@ -26,6 +26,8 @@ static bool readBool(int fd, bool seek) {
     char c;
     int rc;
 
+    ALOGE("readBool is called with fd of %d and seek of %d", fd, seek);
+
     if (seek) {
         rc = lseek(fd, 0, SEEK_SET);
         if (rc) {
@@ -139,6 +141,8 @@ void Sensor::run() {
     std::unique_lock<std::mutex> runLock(mRunMutex);
     constexpr int64_t kNanosecondsInSeconds = 1000 * 1000 * 1000;
 
+    ALOGE("Sensor::run() is called");
+
     while (!mStopThread) {
         if (!mIsEnabled || mMode == OperationMode::DATA_INJECTION) {
             mWaitCV.wait(runLock, [&] {
@@ -162,6 +166,7 @@ void Sensor::run() {
 }
 
 bool Sensor::isWakeUpSensor() {
+    ALOGE("isWakeUpSensor called with mSensorInfo.flags of %d", mSensorInfo.flags);
     return mSensorInfo.flags & static_cast<uint32_t>(SensorFlagBits::WAKE_UP);
 }
 
@@ -188,6 +193,7 @@ void Sensor::setOperationMode(OperationMode mode) {
 }
 
 bool Sensor::supportsDataInjection() const {
+    ALOGE("supportsDataInjection called with mSensorInfo.flags of %d", mSensorInfo.flags);
     return mSensorInfo.flags & static_cast<uint32_t>(SensorFlagBits::DATA_INJECTION);
 }
 
@@ -196,11 +202,15 @@ Result Sensor::injectEvent(const Event& event) {
     if (event.sensorType == SensorType::ADDITIONAL_INFO) {
         // When in OperationMode::NORMAL, SensorType::ADDITIONAL_INFO is used to push operation
         // environment data into the device.
+    ALOGE("injectEvent says ADDITIONAL_INFO");
     } else if (!supportsDataInjection()) {
+        ALOGE("injectEvent says supportsDataInjection is false so invalid operation");
         result = Result::INVALID_OPERATION;
     } else if (mMode == OperationMode::DATA_INJECTION) {
+        ALOGE("injectEvent says mode is DATA_INJECION so we postEvents");
         mCallback->postEvents(std::vector<Event>{event}, isWakeUpSensor());
     } else {
+	ALOGE("injectEvent says BAD_VALUE");
         result = Result::BAD_VALUE;
     }
     return result;
@@ -226,6 +236,8 @@ SysfsPollingOneShotSensor::SysfsPollingOneShotSensor(
     mSensorInfo.power = 0;
     mSensorInfo.flags |= SensorFlagBits::WAKE_UP;
 
+    ALOGE("SysfsPollingOneShotSensor::SysfsPollingOneShotSensor says mSensorInfo.flags is %d", mSensorInfo.flags);
+
     int rc;
 
     rc = pipe(mWaitPipeFd);
@@ -240,6 +252,7 @@ SysfsPollingOneShotSensor::SysfsPollingOneShotSensor(
         ALOGE("failed to open poll fd: %d", mPollFd);
     }
 
+    ALOGE("mPollFd succeeded so yes it read the node: %s", pollPath.c_str());
     if (mWaitPipeFd[0] < 0 || mWaitPipeFd[1] < 0 || mPollFd < 0) {
         mStopThread = true;
         return;
@@ -294,12 +307,16 @@ void SysfsPollingOneShotSensor::setOperationMode(OperationMode mode) {
 void SysfsPollingOneShotSensor::run() {
     std::unique_lock<std::mutex> runLock(mRunMutex);
 
+    ALOGE("SysfsPollingOneShotSensor::run starts");
     while (!mStopThread) {
+        ALOGE("SysfsPollingOneShotSensor::run is running while loop until mStopThread is false");
         if (!mIsEnabled || mMode == OperationMode::DATA_INJECTION) {
+            ALOGE("SysfsPollingOneShotSensor::run is a if function when mIsEnabled is false or mMode is OperationMode::DATA_INJECTION");
             mWaitCV.wait(runLock, [&] {
                 return ((mIsEnabled && mMode == OperationMode::NORMAL) || mStopThread);
             });
         } else {
+	    ALOGE("SysfsPollingOneShotSensor::run mIsEnabled is true or mMode is not OperationMode::DATA_INJECTION");
             // Cannot hold lock while polling.
             runLock.unlock();
             int rc = poll(mPolls, 2, -1);
@@ -311,10 +328,14 @@ void SysfsPollingOneShotSensor::run() {
                 continue;
             }
 
+            ALOGE("SysfsPollingOneShotSensor::run runs poll(mPolls, 2, -1); but it ain't 0 so rc is %d", rc);
+
             if (mPolls[1].revents == mPolls[1].events && readBool(mPollFd, true /* seek */)) {
+		ALOGE("SysfsPollingOneShotSensor::run mPolls[1].revents is equal to mPolls[1].events and readBool returns a true so it does work");
                 activate(false, false, false);
                 mCallback->postEvents(readEvents(), isWakeUpSensor());
             } else if (mPolls[0].revents == mPolls[0].events) {
+		ALOGE("SysfsPollingOneShotSensor::run mPolls[1].revents is not equal to mPolls[1].events or readBool isn't true or both isn't true so it checks if mPolls[0].revents is equal to mPolls[0].events and calls readBool");
                 readBool(mWaitPipeFd[0], false /* seek */);
             }
         }
