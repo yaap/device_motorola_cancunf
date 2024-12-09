@@ -115,11 +115,13 @@ HalProxy::~HalProxy() {
 Return<void> HalProxy::getSensorsList_2_1(ISensorsV2_1::getSensorsList_2_1_cb _hidl_cb) {
     std::vector<V2_1::SensorInfo> sensors;
     for (const auto& iter : mSensors) {
-        ALOGE("SENSOR NAME: %s          ", iter.second.name.c_str());
-        ALOGE("     VENDOR: %s          ", iter.second.name.c_str());
-        ALOGE("     TYPE: %d            ", (uint32_t)iter.second.type);
-        ALOGE("     TYPE_AS_STRING: %s  ", iter.second.typeAsString.c_str());
-        sensors.push_back(iter.second);
+        if (iter.second.typeAsString.c_str() != "com.motorola.sensor.double_tap") {
+            ALOGE("SENSOR NAME: %s          ", iter.second.name.c_str());
+            ALOGE("     VENDOR: %s          ", iter.second.name.c_str());
+            ALOGE("     TYPE: %d            ", (uint32_t)iter.second.type);
+            ALOGE("     TYPE_AS_STRING: %s  ", iter.second.typeAsString.c_str());
+            sensors.push_back(iter.second);
+        }
     }
     _hidl_cb(sensors);
     return Void();
