@@ -381,7 +381,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal
+    android.hardware.sensors@2.1-service.cancunf-multihal
 
 PRODUCT_PACKAGES += \
     sensors.cancunf
