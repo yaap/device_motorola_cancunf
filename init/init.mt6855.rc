@@ -714,6 +714,10 @@ on boot
     chown system system /sys/devices/platform/charger/power_supply/mtk-master-charger/constant_charge_current_max
     chmod 0660 /sys/devices/platform/charger/power_supply/mtk-master-charger/constant_charge_current_max
 
+    # Allow system to change double tap node
+    chown system system /sys/devices/virtual/touchscreen/primary/double_tap_enabled
+    chmod 0664 /sys/devices/virtual/touchscreen/primary/double_tap_enabled
+
 # Smartbook Handler Framework
     chown system system /sys/power/sb_state
     chmod 0660 /sys/power/sb_state
