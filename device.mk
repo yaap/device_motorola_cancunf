@@ -76,6 +76,9 @@ PRODUCT_PACKAGES += \
     DolbyManager \
     MtkInCallService
 
+PRODUCT_PACKAGES += \
+    VolumeSynchronizer
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     $(DEVICE_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
