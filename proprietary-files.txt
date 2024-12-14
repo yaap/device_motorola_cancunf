@@ -2086,8 +2086,6 @@ vendor/firmware/aw86006vcmyova.prog
 vendor/firmware/aw87xxx_acf.bin
 vendor/firmware/cps4035.bin
 vendor/firmware/fm_cust.cfg
-vendor/firmware/focaltech_ts_fw_csot.bin
-vendor/firmware/focaltech_ts_fw_csot_ft8725.bin
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
 vendor/firmware/mt6630_fm_v1_coeff.bin
@@ -2115,8 +2113,6 @@ vendor/firmware/wifi.cfg
 # Firmware (recovery)
 vendor/firmware/ILITEK_FW:recovery/root/vendor/firmware/ILITEK_FW
 vendor/firmware/NT36xxx_MP_Setting_Criteria_606B.csv:recovery/root/vendor/firmware/NT36xxx_MP_Setting_Criteria_606B.csv
-vendor/firmware/focaltech_ts_fw_csot.bin:recovery/root/vendor/firmware/focaltech_ts_fw_csot.bin
-vendor/firmware/focaltech_ts_fw_csot_ft8725.bin:recovery/root/vendor/firmware/focaltech_ts_fw_csot_ft8725.bin
 vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin
 

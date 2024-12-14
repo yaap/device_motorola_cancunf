@@ -186,5 +186,4 @@ mmi_info.ko
 mmi_relay.ko
 sensors_class.ko
 nova_0flash_mmi_v2.ko
-focaltech_0flash_mmi_v2.ko
 ilitek_v3_mmi.ko
