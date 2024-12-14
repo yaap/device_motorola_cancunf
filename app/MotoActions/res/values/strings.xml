@@ -17,4 +17,27 @@
     <string name="turbo_mode_two">25W</string>
     <string name="turbo_mode_three">30W</string>
 
+    <!-- Screen off Tap Gestures -->
+    <string name="tap_gesture_settings_title">Tap gestures</string>
+    <string name="tap_gesture_settings_summary">Perform a tap gesture on screen off for quick actions</string>
+    <string name="tap_gestures_haptic_feedback_title">Haptic feedback</string>
+    <string name="tap_gestures_haptic_feedback_summary">Vibrate when a tap gesture is detected</string>
+    <string name="tap_gesture_single_tap_title">Single tap</string>
+
+    <string name="tap_gesture_action_dialog_title">Gesture action</string>
+    <string name="tap_gesture_action_do_nothing">Do nothing</string>
+    <string name="tap_gesture_action_flashlight">Toggle flashlight</string>
+    <string name="tap_gesture_action_camera">Open the camera</string>
+    <string name="tap_gesture_action_browser">Open the browser</string>
+    <string name="tap_gesture_action_dialer">Open the dialer</string>
+    <string name="tap_gesture_action_email">View your emails</string>
+    <string name="tap_gesture_action_messages">View your messages</string>
+    <string name="tap_gesture_action_play_pause_music">Play/pause music</string>
+    <string name="tap_gesture_action_previous_track">Play the previous music track</string>
+    <string name="tap_gesture_action_next_track">Play the next music track</string>
+    <string name="tap_gesture_action_volume_down">Lower media volume</string>
+    <string name="tap_gesture_action_volume_up">Raise media volume</string>
+    <string name="tap_gesture_action_ambient_display">Show ambient display</string>
+    <string name="tap_gesture_action_wake_device">Wake device</string>
+
 </resources>

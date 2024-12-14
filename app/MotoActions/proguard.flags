@@ -1,4 +1,4 @@
--keep class org.lineageos.MotoActions.* {
+-keep class org.lineageos.settings.device.* {
   *;
 }
 

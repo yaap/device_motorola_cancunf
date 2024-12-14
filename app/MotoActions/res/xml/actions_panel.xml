@@ -46,6 +46,16 @@
             android:title="@string/lift_to_silence_title"
             android:summary="@string/lift_to_silence_summary" />
 
+        <Preference
+            android:key="tap_gesture_category"
+            android:title="@string/tap_gesture_settings_title"
+            android:summary="@string/tap_gesture_settings_summary"
+            android:persistent="false" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.lineageos.settings.device"
+                    android:targetClass="org.lineageos.settings.device.actions.TapGestureSettings" />
+        </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
