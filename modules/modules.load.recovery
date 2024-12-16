@@ -171,8 +171,6 @@ mtk_rpmsg_mbox.ko
 mtk-mbox.ko
 mtk_tinysys_ipi.ko
 irq-dbg.ko
-uload_ind.ko
-load_track.ko
 camera_ldo.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
