@@ -8,5 +8,6 @@
     <string-array name="config_skuSupportsSecureNfc" translatable="false">
         <item>XT2343-1</item>
         <item>XT2343-2</item>
+        <item>XT2431-2</item>
     </string-array>
 </resources>
