@@ -23,6 +23,7 @@ cc_binary {
     defaults: [
         "hidl_defaults",
     ],
+    required: ["hals.conf"],
     vendor: true,
     relative_install_path: "hw",
     srcs: [
@@ -51,4 +52,11 @@ cc_binary {
         "android.hardware.sensors@1.0-convert",
         "android.hardware.sensors@2.X-multihal",
     ],
+}
+
+prebuilt_etc {
+    name: "hals.conf",
+    src: "hals.conf",
+    sub_dir: "sensors",
+    vendor: true,
 }
