@@ -10,4 +10,5 @@
         <item>XT2343-2</item>
         <item>XT2431-2</item>
     </string-array>
+    <bool name="enable_secure_nfc_support">true</bool>
 </resources>
