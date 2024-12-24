@@ -57,6 +57,6 @@ cc_binary {
 prebuilt_etc {
     name: "hals.conf",
     src: "hals.conf",
-    sub_dir: "sensors",
+    relative_install_path: "sensors",
     vendor: true,
 }

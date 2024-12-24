@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "TetheringConfigResOverlayCancunf",
-    vendor: true
+    vendor: true,
 }
