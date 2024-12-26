@@ -57,6 +57,12 @@ on boot
     write /dev/cpuctl/background/cpu.uclamp.min 100
     write /dev/cpuctl/background/cpu.uclamp.latency_sensitive 1
 
+    # Thermal tunning
+    write /sys/kernel/thermal/min_throttle_freq "MIN_FREQ -1 -1 -1 -1"
+    write /sys/kernel/thermal/min_ttj "MIN_TTJ 85000"
+    write /sys/kernel/thermal/target_tpcb 80000
+    write /sys/kernel/thermal/ttj "TTJ 85000 85000 85000"
+
 on enable-low-power
     write /sys/devices/platform/soc/112b0000.ufshci/clkgate_enable 1
     write /proc/sys/kernel/sched_migration_cost_ns 200000

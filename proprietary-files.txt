@@ -2798,33 +2798,6 @@ vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/sensors.moto.so
 
-# Thermal
-vendor/bin/thermal_core
-vendor/bin/thermal_intf
-vendor/etc/init/init.thermal_core.rc
-vendor/etc/thermal/disable_skin_control.conf
-vendor/etc/thermal/disable_thermal.conf
-vendor/etc/thermal/disable_thermal_temp.conf
-vendor/etc/thermal/disable_throttling.conf
-vendor/etc/thermal/thermal.conf
-vendor/etc/thermal/thermal_kpoc.conf
-vendor/etc/thermal/thermal_policy_02.conf
-vendor/etc/thermal/thermal_policy_03.conf
-vendor/etc/thermal/thermal_policy_04.conf
-vendor/etc/thermal/thermal_policy_05.conf
-vendor/etc/thermal/thermal_policy_07.conf
-vendor/etc/thermal/thermal_policy_08.conf
-vendor/etc/thermal/thermal_policy_09.conf
-vendor/etc/thermal/thermal_policy_10.conf
-vendor/etc/thermal/thermal_policy_12.conf
-vendor/etc/thermal/thermal_policy_13.conf
-vendor/etc/thermal/thermal_policy_14.conf
-vendor/etc/thermal/thermal_policy_15.conf
-vendor/etc/thermal/thermal_policy_16.conf
-vendor/etc/thermal/thermal_policy_17.conf
-vendor/etc/thermal/thermal_policy_18.conf
-vendor/etc/thermal/thermal_policy_19.conf
-
 # Trusted Execution Environment (TEE)
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin

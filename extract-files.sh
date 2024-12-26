@@ -151,10 +151,6 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" "$MY_DIR/ims-patches"
             ;;
-        vendor/etc/init/init.thermal_core.rc)
-            [ "$2" = "" ] && return 0
-            sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
-            ;;
         vendor/etc/libnfc-nxp_220.conf)
             [ "$2" = "" ] && return 0
             sed -i "/DEFAULT_ISODEP_ROUTE/ s/0x01/0xC0/g" "${2}"
