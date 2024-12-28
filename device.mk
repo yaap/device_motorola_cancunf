@@ -396,6 +396,11 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# SKU
+# Variant Properties
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,product.*.prop,$(DEVICE_PATH)/configs/properties/sku/,$(TARGET_COPY_OUT_PRODUCT))
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
