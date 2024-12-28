@@ -29,6 +29,22 @@ on post-fs && property:ro.vendor.hw.ram=4GB
     setprop dalvik.vm.heapminfree 8m
     setprop dalvik.vm.heapmaxfree 16m
 
+on post-fs && property:ro.vendor.hw.ram=8GB
+    setprop dalvik.vm.heapstartsize 24m
+    setprop dalvik.vm.heapgrowthlimit 256m
+    setprop dalvik.vm.heapsize 512m
+    setprop dalvik.vm.heaptargetutilization 0.46
+    setprop dalvik.vm.heapminfree 8m
+    setprop dalvik.vm.heapmaxfree 48m
+
+on post-fs && property:ro.vendor.hw.ram=12GB
+    setprop dalvik.vm.heapstartsize 24m
+    setprop dalvik.vm.heapgrowthlimit 384m
+    setprop dalvik.vm.heapsize 512m
+    setprop dalvik.vm.heaptargetutilization 0.42
+    setprop dalvik.vm.heapminfree 8m
+    setprop dalvik.vm.heapmaxfree 56m
+
 # NFC
 on property:ro.vendor.hw.nfc=nq && property:persist.vendor.nfc.config_file_name=*
     start vendor.nfc_hal_service
