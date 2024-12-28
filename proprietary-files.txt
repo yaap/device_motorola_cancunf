@@ -2521,7 +2521,6 @@ vendor/etc/public.libraries.txt
 
 # Netd daemon
 vendor/bin/netdagent
-vendor/bin/netdc
 vendor/etc/init/netdagent.rc
 vendor/etc/init/networksetting.rc
 vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
