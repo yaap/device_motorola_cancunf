@@ -21,6 +21,14 @@ on property:ro.boot.hardware.sku="XT2431-3"
 on init && property:ro.vendor.hw.esim="false"
     mount none /product/lost+found /product/etc/permissions/android.hardware.telephony.euicc.xml bind
 
+on post-fs && property:ro.vendor.hw.ram=4GB
+    setprop dalvik.vm.heapstartsize 8m
+    setprop dalvik.vm.heapgrowthlimit 192m
+    setprop dalvik.vm.heapsize 512m
+    setprop dalvik.vm.heaptargetutilization 0.6
+    setprop dalvik.vm.heapminfree 8m
+    setprop dalvik.vm.heapmaxfree 16m
+
 # NFC
 on property:ro.vendor.hw.nfc=nq && property:persist.vendor.nfc.config_file_name=*
     start vendor.nfc_hal_service
