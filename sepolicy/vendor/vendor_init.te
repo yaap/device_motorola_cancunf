@@ -9,3 +9,4 @@ get_prop(vendor_init, vendor_sku_prop)
 set_prop(vendor_init, vendor_sku_prop)
 set_prop(vendor_init, system_mot_prop)
 allow vendor_init nfc_device:chr_file r_file_perms;
+allow vendor_init proc_watermark_boost_factor:file w_file_perms;

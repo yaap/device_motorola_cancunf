@@ -5,6 +5,10 @@ genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon/extcon0/cable.1/name 
 # Input Devices
 genfscon sysfs /devices/virtual/input u:object_r:vendor_sysfs_input:s0
 
+# Memory
+genfscon proc /sys/vm/lowmem_reserve_ratio    u:object_r:proc_watermark_boost_factor:s0
+genfscon proc /sys/vm/min_free_kbytes         u:object_r:proc_watermark_boost_factor:s0
+
 # Motorola Specific filesystem entries
 genfscon proc /bootinfo u:object_r:vendor_proc_hw:s0
 genfscon proc /config u:object_r:vendor_proc_hw:s0
