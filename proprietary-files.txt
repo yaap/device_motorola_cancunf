@@ -2010,7 +2010,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 # Dolby
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service
-vendor/etc/dolby/dax-default.xml
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
@@ -2120,7 +2119,7 @@ vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/novatek_ts_fw.bi
 vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin
 
 # FM Radio - from Xiaomi beryl UP1A.231005.007 V816.0.3.0.UOQCNXM
-system_ext/lib64/libfmjni.so:lib64/libfmjni.so|01f7b9929d8b81253ad88b28244ca43de6e6e281
+system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so|01f7b9929d8b81253ad88b28244ca43de6e6e281
 
 # GPS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
@@ -2252,12 +2251,12 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS (System)
-etc/permissions/moto-telephony.xml
--framework/moto-telephony.jar
-system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar
-system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar
-system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar
-system_ext/framework/mediatek-ims-oem-plugin.jar:framework/mediatek-ims-oem-plugin.jar
+system/etc/permissions/moto-telephony.xml
+system/framework/moto-telephony.jar
+system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
+system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar
+system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar
+system_ext/framework/mediatek-ims-oem-plugin.jar:system/framework/mediatek-ims-oem-plugin.jar
 system_ext/priv-app/ImsService/ImsService.apk
 
 # IMS (Vendor)
@@ -2338,7 +2337,6 @@ vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediaswcodec.policy
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_dolbydax39.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/mtk_omx_core.cfg
@@ -2572,21 +2570,6 @@ vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
-vendor/lib64/libmvpu_cic_ci_compiler.so
-vendor/lib64/libmvpu_clc_cl_compiler.so
-vendor/lib64/libmvpu_clc_mvpu_debuginfo.so
-vendor/lib64/libmvpu_clc_mvpu_elf.so
-vendor/lib64/libmvpu_clc_mvpu_utility.so
-vendor/lib64/libmvpu_clc_vpu_isa.so
-vendor/lib64/libmvpu_config.so
-vendor/lib64/libmvpu_engine.so
-vendor/lib64/libmvpu_engine_pub.so
-vendor/lib64/libmvpu_pattern.so
-vendor/lib64/libmvpu_pattern_pub.so
-vendor/lib64/libmvpu_runtime.so
-vendor/lib64/libmvpu_runtime_pub.so
-vendor/lib64/libmvpuop_mtk_cv.so
-vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
@@ -2618,7 +2601,6 @@ vendor/etc/libnfc-nci_220e.conf
 vendor/etc/libnfc-nci_557.conf
 vendor/etc/libnfc-nci_560.conf
 vendor/etc/libnfc-nxp-pnscr.conf
-vendor/etc/libnfc-nxp_220.conf
 vendor/etc/libnfc-sec-nci.conf
 vendor/etc/libnfc-sec-vendor.conf
 vendor/etc/nfc_calibration.txt
