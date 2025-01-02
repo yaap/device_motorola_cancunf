@@ -66,8 +66,6 @@ sm5109c.ko
 mtk_panel_ext.ko
 dsi-panel-mot-tm-nt36672c-650-fhdp-dphy-vdo-120hz.ko
 dsi-panel-mot-txd-ili7807s-650-fhdp-dphy-vdo-120hz.ko
-dsi-panel-mot-csot-ft8725-650-fhdp-dphy-vdo-120hz.ko
-dsi-panel-mot-dummy-vdo-60hz.ko
 mediatek-drm.ko
 aee_rs.ko
 mmprofile.ko
