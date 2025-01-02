@@ -21,6 +21,15 @@ on property:ro.boot.hardware.sku="XT2431-3"
 on init && property:ro.vendor.hw.esim="false"
     mount none /product/lost+found /product/etc/permissions/android.hardware.telephony.euicc.xml bind
 
+on init && property:ro.boot.hardware.sku="XT2431-1"
+    setprop vendor.powerhal.config powerhint-cancunp.json
+
+on init && property:ro.boot.hardware.sku="XT2431-2"
+    setprop vendor.powerhal.config powerhint-cancunp.json
+
+on init && property:ro.boot.hardware.sku="XT2431-3"
+    setprop vendor.powerhal.config powerhint-cancunp.json
+
 on post-fs && property:ro.vendor.hw.ram=4GB
     setprop dalvik.vm.heapstartsize 8m
     setprop dalvik.vm.heapgrowthlimit 192m
