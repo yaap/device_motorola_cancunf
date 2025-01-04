@@ -63,6 +63,9 @@
 # Neural Networks
 /vendor/lib(64)?/libapusys\.so                                                         u:object_r:same_process_hal_file:s0
 
+# Power
+/vendor/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                      u:object_r:hal_power_default_exec:s0
+
 # Secure Element
 /vendor/bin/hw/android\.hardware\.secure_element-service\.nxp                          u:object_r:hal_secure_element_default_exec:s0
 
