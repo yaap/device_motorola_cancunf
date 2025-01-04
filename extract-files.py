@@ -75,6 +75,8 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/soundfx/libswdap.so','vendor/lib64/soundfx/libdlbvol.so',
      'vendor/lib64/libcodec2_soft_ac4dec.so','vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service'): blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
+    'vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml': blob_fixup()
+        .regex_replace('1.1', '1.2'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
