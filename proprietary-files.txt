@@ -1914,10 +1914,6 @@ vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_super_night_raw_bin.so
 vendor/lib64/libarcsoft_super_night_se_raw.so
 
-# Chipinfo
-vendor/bin/chipinfo
-vendor/etc/init/chipinfo_init.rc
-
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/firmware/soc2_2_ram_bt_1b_1_hdr.bin
