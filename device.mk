@@ -408,6 +408,9 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,product.*.prop,$(DEVICE_PATH)/configs/properties/sku/,$(TARGET_COPY_OUT_PRODUCT))
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,vendor.*.prop,$(DEVICE_PATH)/configs/properties/sku/,$(TARGET_COPY_OUT_VENDOR))
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \

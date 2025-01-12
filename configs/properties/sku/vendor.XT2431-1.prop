@@ -1,0 +1,10 @@
+#
+# XT2431-1 variant specific props
+#
+
+ro.soc.manufacturer=Mediatek
+ro.soc.model=MT6855V/ATZA
+ro.vendor.soc.manufacturer=Mediatek
+ro.vendor.soc.model=MT6855
+ro.vendor.soc.model.external_name=MT6855V/ATZA
+ro.vendor.soc.model.part_name=MT6855V/ATZA

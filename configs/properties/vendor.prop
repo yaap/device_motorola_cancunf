@@ -339,6 +339,10 @@ ro.vendor.sensors.prox_for_call=true
 # SoC
 ro.soc.manufacturer=Mediatek
 ro.soc.model=MT6855V/AZA
+ro.vendor.soc.manufacturer=Mediatek
+ro.vendor.soc.model=MT6855V/AZA
+ro.vendor.soc.model.external_name=MT6855G
+ro.vendor.soc.model.part_name=MT6855G
 
 # TEE
 ro.mtk_key_manager_support=1
@@ -365,3 +369,5 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m_6855
 ro.vendor.wlan.standalone.log=y
+
+import /vendor/vendor.${ro.boot.hardware.sku}.prop

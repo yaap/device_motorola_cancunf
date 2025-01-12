@@ -10,5 +10,3 @@ ro.product.system.model=moto g64y 5G
 ro.product.system_ext.model=moto g64y 5G
 ro.product.vendor.model=moto g64y 5G
 ro.product.vendor_dlkm.model=moto g64y 5G
-ro.soc.manufacturer=Mediatek
-ro.soc.model=MT6855V/ATZA
