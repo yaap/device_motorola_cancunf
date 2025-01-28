@@ -97,7 +97,6 @@ debug.sf.high_fps_early_phase_offset_ns=-12666667
 debug.sf.high_fps_late_app_phase_offset_ns=-8000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-12666667
 debug.sf.hwc.min.duration=23000000
-debug.sf.latch_unsignaled=1
 debug.sf.late.app.duration=20000000
 debug.sf.late.sf.duration=27600000
 debug.sf.region_sampling_period_ns=1000000000
