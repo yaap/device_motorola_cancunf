@@ -70,6 +70,9 @@ on property:ro.vendor.hw.nfc=ese_nxp && property:persist.vendor.nfc.config_file_
 on property:ro.vendor.hw.nfc=ese_nq
     start vendor.secure_element_hal_service
 
+on post-fs && property:ro.vendor.hw.nfc=false
+    stop mtk_secure_element_hal_service
+
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
     class early_hal
