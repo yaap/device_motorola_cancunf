@@ -30,9 +30,10 @@
 
     <!-- Dolby profiles -->
     <string name="dolby_profile_dynamic">Dynamic</string>
-    <string name="dolby_profile_video">Movie/Video</string>
+    <string name="dolby_profile_video">Film</string>
+    <string name="dolby_profile_game">Game</string>
     <string name="dolby_profile_music">Music</string>
-    <string name="dolby_profile_voice">Voice</string>
+    <string name="dolby_profile_voice">Podcast</string>
 
     <!-- Dolby equalizer presets -->
     <string name="dolby_preset_default">Flat (off)</string>
