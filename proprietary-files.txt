@@ -2114,9 +2114,6 @@ vendor/firmware/NT36xxx_MP_Setting_Criteria_606B.csv:recovery/root/vendor/firmwa
 vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin
 
-# FM Radio - from Xiaomi beryl UP1A.231005.007 V816.0.3.0.UOQCNXM
-system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so|01f7b9929d8b81253ad88b28244ca43de6e6e281
-
 # GPS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/bin/mnld
