@@ -144,9 +144,6 @@ vendor.hw.sf.IdleLazyResetThresholdT=500
 vendor.hw.sf.hwc.min.duration=23000000
 vendor.media.heif.highThreshold=20
 
-# Dolby
-ro.vendor.dolby.dax.version=DAX3_3.9.0.13_r1
-
 # DRM
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1

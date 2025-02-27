@@ -70,11 +70,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     BesLoudness \
-    DolbyManager \
     MtkInCallService
-
-PRODUCT_PACKAGES += \
-    VolumeSynchronizer
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -222,16 +218,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     $(DEVICE_PATH)/configs/media/media_codecs_c2_shim1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_shim1.xml \
-    $(DEVICE_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(DEVICE_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(DEVICE_PATH)/configs/media/media_codecs_performance_c2_shim1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2_shim1.xml \
     $(DEVICE_PATH)/configs/media/media_codecs_shim1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shim1.xml \
     $(DEVICE_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(DEVICE_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml
