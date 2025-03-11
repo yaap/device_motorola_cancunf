@@ -11,9 +11,6 @@ vendor.camera.aux.packagelist=org.lineageos.aperture,com.motorola.camera3
 # Dex
 dalvik.vm.dex2oat64.enabled=true
 
-# Display
-persist.sys.brightness.low.gamma=true
-
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
