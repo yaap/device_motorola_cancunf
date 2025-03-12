@@ -2,7 +2,7 @@
 
 ```
 #
-# Copyright (C) 2024 PixelOS
+# SPDX-FileCopyrightText: 2024 PixelOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
