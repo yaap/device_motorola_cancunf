@@ -64,7 +64,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_policy.stub \
     libalsautils \
-    libaudiopreprocessing \
     libopus.vendor \
     audioclient-types-aidl-cpp.vendor
 
