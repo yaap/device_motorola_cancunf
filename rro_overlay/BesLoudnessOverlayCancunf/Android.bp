@@ -5,7 +5,5 @@
 
 runtime_resource_overlay {
     name: "BesLoudnessOverlayCancunf",
-    sdk_version: "current",
-
     product_specific: true,
 }
