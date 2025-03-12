@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# SPDX-FileCopyrightText: 2016 The CyanogenMod Project
-# SPDX-FileCopyrightText: 2017-2020 The LineageOS Project
+# SPDX-FileCopyrightText: The CyanogenMod Project
+# SPDX-FileCopyrightText: The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

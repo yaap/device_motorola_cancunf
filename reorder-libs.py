@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# SPDX-FileCopyrightText: 2021 The LineageOS Project
+# SPDX-FileCopyrightText: The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
