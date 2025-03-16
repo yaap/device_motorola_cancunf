@@ -39,7 +39,6 @@ import com.android.internal.yaap.hardware.LineageHardwareManager; // Need FWB su
 import com.android.internal.yaap.hardware.TouchscreenGesture; // Need FWB support
 import org.lineageos.settings.device.Constants;
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.collapsingtoolbar.R;
 
 import java.lang.System;
 import java.util.ArrayList;
@@ -54,7 +53,7 @@ public class TapGestureSettings extends CollapsingToolbarBaseActivity
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .replace(R.id.content_frame, new MainSettingsFragment())
+                    .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, new MainSettingsFragment())
                     .commit();
         }
     }
@@ -81,7 +80,7 @@ public class TapGestureSettings extends CollapsingToolbarBaseActivity
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
 
-            setPreferencesFromResource(R.xml.tap_gesture_settings, rootKey);
+            setPreferencesFromResource(org.lineageos.settings.device.R.xml.tap_gesture_settings, rootKey);
 
             if (isTapGesturesSupported(getContext())) {
                 initTapGestures();
@@ -142,13 +141,13 @@ public class TapGestureSettings extends CollapsingToolbarBaseActivity
                 mGesture = gesture;
 
                 setKey(buildPreferenceKey(gesture));
-                setEntries(R.array.tap_gesture_action_entries);
-                setEntryValues(R.array.tap_gesture_action_values);
+                setEntries(org.lineageos.settings.device.R.array.tap_gesture_action_entries);
+                setEntryValues(org.lineageos.settings.device.R.array.tap_gesture_action_values);
                 setDefaultValue(String.valueOf(defaultAction));
 
                 setIconSpaceReserved(true);
                 setSummary("%s");
-                setDialogTitle(R.string.tap_gesture_action_dialog_title);
+                setDialogTitle(org.lineageos.settings.device.R.string.tap_gesture_action_dialog_title);
                 setTitle(getLocalizedString(
                         context.getResources(), gesture.name, TAP_GESTURE_TITLE));
             }
@@ -234,7 +233,7 @@ public class TapGestureSettings extends CollapsingToolbarBaseActivity
         private static int[] getDefaultGestureActions(final Context context,
                 final TouchscreenGesture[] gestures) {
             final int[] defaultActions = context.getResources().getIntArray(
-                    R.array.config_defaultTapGestureActions);
+                    org.lineageos.settings.device.R.array.config_defaultTapGestureActions);
             if (defaultActions.length >= gestures.length) {
                 return defaultActions;
             }
