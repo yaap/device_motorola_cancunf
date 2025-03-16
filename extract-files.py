@@ -76,6 +76,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('1.1', '1.2')
         .regex_replace('@1.0', '@1.2')
         .regex_replace('default9', 'default'),
+    ('vendor/lib64/mt6855/libcam.hal3a.v3.so', 'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
