@@ -78,6 +78,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('default9', 'default'),
     ('vendor/lib64/mt6855/libcam.hal3a.v3.so', 'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    ('vendor/lib/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so', 'vendor/lib64/mt6855/libneuralnetworks_sl_driver_mtk_prebuilt.so', 
+     'vendor/lib64/libstfactory-vendor.so', 'vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 
+     'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so', 'vendor/lib/libtflite_mtk.so', 'vendor/lib64/libtflite_mtk.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
