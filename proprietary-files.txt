@@ -2054,8 +2054,6 @@ vendor/firmware/WIFI_RAM_CODE_soc2_2_1b_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1c_1.bin
 vendor/firmware/WMT_SOC.cfg
 vendor/firmware/WMT_SOC_CANCUNF.cfg
-vendor/firmware/WMT_SOC_CANCUNN_FEM.cfg
-vendor/firmware/WMT_SOC_devonn_epa.cfg
 vendor/firmware/aw86006.prog
 vendor/firmware/aw86006vcmyova.prog
 vendor/firmware/aw87xxx_acf.bin
