@@ -83,7 +83,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display
 debug.mediatek.disp_decompress=1
-debug.renderengine.backend=skiagl
 debug.sf.disable_backpressure=1
 debug.sf.early.app.duration=20000000
 debug.sf.early.sf.duration=27600000
