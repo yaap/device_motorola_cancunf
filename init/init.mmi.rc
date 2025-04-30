@@ -13,7 +13,6 @@ on early-init
     # execution of vendor.oem-hw-sh to set
     # required properties.
     setprop ro.vendor.hw.radio ${ro.boot.radio}
-    setprop ro.carrier ${ro.boot.carrier}
     setprop ro.sf.lcd_density ${ro.boot.lcd_density}
     setprop ro.vendor.fsg-id ${ro.boot.fsg-id}
     setprop ro.vendor.hw.device ${ro.boot.device}
@@ -28,7 +27,6 @@ on early-init
     setprop ro.vendor.boot.bl_state ${ro.boot.bl_state}
     setprop ro.vendor.boot.serialno ${ro.boot.serialno}
     setprop ro.vendor.zygote ${ro.zygote}
-    setprop ro.carrier unknown
 
 on post-fs
     restorecon_recursive /mnt/vendor/persist
