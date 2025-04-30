@@ -32,8 +32,6 @@ on early-init
     setprop ro.carrier unknown
 
 on post-fs
-    # for batt_health server
-    mkdir /mnt/vendor/persist/batt_health 0770 vendor_pwric vendor_pwric
     restorecon_recursive /mnt/vendor/persist
    # Set dm-verity property for dm-verified partitions
     verity_update_state

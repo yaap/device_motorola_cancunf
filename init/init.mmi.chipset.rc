@@ -2,7 +2,3 @@ import /vendor/etc/init/hw/init.mmi.backup.trustlet.rc
 
 on early-init
     insmod /vendor/lib/modules/mmi_info.ko
-
-on post-fs-data
-    # for batt_health server
-    mkdir /mnt/vendor/persist/batt_health 0770 vendor_pwric vendor_pwric
