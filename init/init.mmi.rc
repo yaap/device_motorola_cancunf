@@ -1,10 +1,9 @@
-# Chipset-specific file
-import /vendor/etc/init/hw/init.mmi.chipset.rc
-
-# Target-specific file
 import /vendor/etc/init/hw/init.mmi.overlay.rc
+import /vendor/etc/init/hw/init.mmi.backup.trustlet.rc
 
 on early-init
+    insmod /vendor/lib/modules/mmi_info.ko
+
     wait /dev/block/by-name/hw
     exec_start vendor.oem-hw-sh
     # Make sure ro.boot.product.hardware.sku is set before hwservicemanager startup.

@@ -1,4 +1,0 @@
-import /vendor/etc/init/hw/init.mmi.backup.trustlet.rc
-
-on early-init
-    insmod /vendor/lib/modules/mmi_info.ko
