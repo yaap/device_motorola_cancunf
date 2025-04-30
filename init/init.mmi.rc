@@ -60,21 +60,7 @@ on post-fs-data
      # Imager tuning data for rescue Feature
      mkdir /mnt/vendor/persist/camera/iqtuning 0771 camera camera
 
-
-     # Create bug2go folder
-     mkdir /data/vendor/bug2go 0770 log log
-
-     # Setup folder for aplogd
-     mkdir /data/vendor/aplogd 0770 log log
-
-    # Create directory used by power_supply_logger
-    mkdir /data/vendor/power_supply_logger 0750 vendor_pwric log
-    # Create directory power_supply_logger used by memtest and batt_health
-    mkdir /data/vendor_de/power_supply_logger 0770 root log
-
     mkdir /data/vendor/hardware_revisions 0755 system system
-
-    copy /data/vendor_de/power_supply_logger/memtest.log /data/vendor/power_supply_logger/memtest.log
 
 on charger
     trigger early-fs
