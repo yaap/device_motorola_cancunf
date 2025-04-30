@@ -92,7 +92,6 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/m
 BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/modules/vendor_dlkm/*.ko)
 
 # Partitions
-AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     product \
