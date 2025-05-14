@@ -9,12 +9,8 @@ vendor/lib64/libladder.so
 vendor/lib64/libudf.so
 
 # Audio
-vendor/bin/atcid
-vendor/bin/audiocmdservice_atci
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
-vendor/etc/init/atcid.rc
-vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/ap_gain.bin
@@ -59,7 +55,6 @@ vendor/lib64/librt_extamp_intf.so
 vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libundistort_impl.so
-vendor/lib64/vendor.mediatek.hardware.atci@1.0.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
