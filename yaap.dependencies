@@ -18,5 +18,9 @@
     "repository": "vendor_motorola_cancunf-motcamera",
     "target_path": "vendor/motorola/cancunf-motcamera",
     "branch": "fifteen"
+  },
+  {
+    "repository": "packages_apps_DisplayFeatures",
+    "target_path": "packages/apps/DisplayFeatures"
   }
 ]
