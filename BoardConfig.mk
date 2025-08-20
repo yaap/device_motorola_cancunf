@@ -28,6 +28,9 @@ TARGET_NO_BOOTLOADER := true
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
+# Camera
+TARGET_CAMERA_SERVICE_EXT_LIB := //$(DEVICE_PATH):libcameraservice_extension.cancunf
+
 # Display
 TARGET_SCREEN_DENSITY := 400
 
