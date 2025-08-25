@@ -270,7 +270,6 @@ $(foreach DEVICE_NFC_SKU, $(DEVICE_NFC_SKUS), \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    BesLoudnessOverlayCancunf \
     CarrierConfigOverlayCancunf \
     DisplayFeaturesOverlayCancunf \
     EsimOverlayCancunf \
