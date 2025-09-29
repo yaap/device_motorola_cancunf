@@ -1,23 +1,19 @@
 [
   {
     "repository"  : "vendor_motorola_cancunf",
-    "target_path" : "vendor/motorola/cancunf",
-    "branch": "fifteen"
+    "target_path" : "vendor/motorola/cancunf"
   },
   {
     "repository"  : "hardware_mediatek",
-    "target_path" : "hardware/mediatek",
-    "branch": "fifteen"
+    "target_path" : "hardware/mediatek"
   },
   {
     "repository"  : "device_motorola_cancunf-kernel",
-    "target_path" : "device/motorola/cancunf-kernel",
-    "branch": "fifteen"
+    "target_path" : "device/motorola/cancunf-kernel"
   },
   {
     "repository": "vendor_motorola_cancunf-motcamera",
-    "target_path": "vendor/motorola/cancunf-motcamera",
-    "branch": "fifteen"
+    "target_path": "vendor/motorola/cancunf-motcamera"
   },
   {
     "repository": "packages_apps_DisplayFeatures",
