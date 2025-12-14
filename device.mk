@@ -88,6 +88,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth-service.mediatek
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Boot
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
