@@ -105,7 +105,6 @@ $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 
 # Display
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter
 
@@ -151,7 +150,6 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
@@ -197,15 +195,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/idc/,$(TARGET_COPY_OUT_VENDOR)/usr/idc) \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
-# Keymaster / Keymint
-PRODUCT_PACKAGES += \
-    libkeymint.vendor \
-    libpuresoftkeymasterdevice.vendor
-
 # Keystore
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore_V1.xml \
-    android.system.wifi.keystore@1.0.vendor \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
 
@@ -242,7 +234,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    libchrome.vendor \
     Tag
 
 PRODUCT_COPY_FILES += \
@@ -368,12 +359,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
 
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
     libmtkperf_client_vendor \
     libmtkperf_client \
     libpowerhalwrap_vendor \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/powerhint-cancunp.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint-cancunp.json \
@@ -452,8 +441,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     hostapd \
-    wpa_supplicant \
-    android.hardware.wifi.supplicant@1.4.vendor
+    wpa_supplicant
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
