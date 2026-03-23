@@ -62,7 +62,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.memtrack-service.mediatek': blob_fixup()
         .replace_needed('android.hardware.memtrack-V1-ndk_platform.so', 'android.hardware.memtrack-V1-ndk.so'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
     'vendor/bin/hw/android.hardware.security.keymint-service.trustonic': blob_fixup()
         .add_needed('android.hardware.security.rkp-V1-ndk.so')
@@ -79,9 +78,17 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('android.hardware.sensors@1.0-convert-shared.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/hw/audio.primary.mediatek.so': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so')
         .replace_needed('libutils.so','libutils-v32.so')
         .replace_needed('libalsautils.so','libalsautils-v31.so'),
+    (
+        'vendor/lib64/hw/sensors.mediatek.V2.0.so',
+        'vendor/lib64/libcodec2_mtk_c2store.so',
+        'vendor/lib64/libcodec2_mtk_vdec.so',
+        'vendor/lib64/libcodec2_mtk_venc.so',
+        'vendor/lib64/libcodec2_vpp_qt_plugin.so',
+        'vendor/lib64/libcodec2_vpp_rs_plugin.so'
+    ): blob_fixup()
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     (
         'vendor/lib64/hw/mt6855/android.hardware.camera.provider@2.6-impl-mediatek.so',
         'vendor/lib64/mt6855/libmtkcam_stdutils.so',
